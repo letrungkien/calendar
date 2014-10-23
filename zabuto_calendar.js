@@ -209,7 +209,7 @@ $.fn.zabuto_calendar = function (options) {
             var $prevMonthCell = $('<th></th>').append($prevMonthNav);
             var $nextMonthCell = $('<th></th>').append($nextMonthNav);
 
-            var $currMonthLabel = $('<span>' + monthLabels[month] + ' ' + year + '</span>');
+            var $currMonthLabel = $('<span>' + year + ' ' + monthLabels[month] + '</span>');
             $currMonthLabel.dblclick(function () {
                 var dateInitObj = $calendarElement.data('initDate');
                 drawTable($calendarElement, $tableObj, dateInitObj.getFullYear(), dateInitObj.getMonth());
